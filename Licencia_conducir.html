@@ -9,14 +9,16 @@
         document.write(frase);
         saltarLinea();
     }
-var clasicomundial = 2006;
-var limite = parseInt(prompt(" ingrese el año limite para buscar"))
+    var edad = parseInt(prompt("Que edad tienes? "));
+    var Licencia =(prompt(" Tiene licencia de conducir? responder S o N "));
 
-while (clasicomundial > limite) {
-    imprimir(" Hubo clasimo mundial en el año " + clasicomundial);
-    clasicomundial + clasicomundial + 4;
-}
+    if ((edad >= 18) && (Licencia == "S")) {
+    imprimir("Usted puede conducir");
 
+    } 
+else {
+        imprimir("No puedes conducir");
+    }
 
 
     
