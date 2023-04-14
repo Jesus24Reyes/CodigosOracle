@@ -1,0 +1,40 @@
+<meta charset="UTF-8">
+
+<script>
+function saltarlinea() {
+    document.write("<br>");
+    document.write("<br>");
+    document.write("<br>");
+}  
+
+function imprimir(frase) {
+    document.write(frase);
+saltarlinea();
+}
+
+function calcularimc (peso,altura) {
+return (peso / (altura * altura));
+}
+
+nombre = prompt ("informe tu nombre");
+edad = prompt (nombre + " indique su edad.");
+pesoInformado = prompt ( nombre + " informe su peso KG");
+alturaInformado = prompt (nombre + " informe su altura 'metros'");
+
+imcCalculado = calcularimc(pesoInformado,alturaInformado)
+imprimir(nombre + ", su imc calculado es: " + imcCalculado)
+
+
+if (imcCalculado < 18.5) {
+imprimir(" bUEHHHH ");
+}
+
+if (imcCalculado >= 18.5){
+(imcCalculado >= 24) 
+imprimir(" Su IMC esta dentro de lo normal");
+}
+
+
+
+
+</script>

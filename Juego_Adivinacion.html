@@ -1,0 +1,25 @@
+<meta charset="UTF-8">
+<h1> Juego De adivinacion </h1>
+<script>
+function saltarlinea() {
+    document.write("<br>");
+    document.write("<br>");
+    document.write("<br>");
+}  
+
+function imprimir(frase) {
+    document.write(frase);
+saltarlinea();
+}
+
+var numeropensado = Math.round(Math.random()*10);
+var numerolanzado = parseInt(prompt(" Inserte un numero entre 0-10"))
+
+if (numeropensado == numerolanzado) {
+imprimir("Usted es un salami induveca");
+ 
+}else {
+    imprimir("El numero era " + numeropensado); 
+}
+
+</script>

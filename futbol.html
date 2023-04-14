@@ -1,0 +1,26 @@
+<meta charset="UTF-8">
+
+<script>
+function saltarlinea() {
+    document.write("<br>");
+    document.write("<br>");
+    document.write("<br>");
+}  
+
+function imprimir(frase) {
+    document.write(frase);
+saltarlinea();
+}
+var niños = parseInt(prompt("Cuantos niños?"));
+var adultos = parseInt(prompt("Cuantos adultos?"));
+
+ticketstotal = (adultos * 2) + (niños * 0);
+montotal = (ticketstotal * 5.95);
+
+imprimir("total de tickers: " + ticketstotal);
+imprimir("Monto total a pagar : " + montotal);
+
+if (ticketstotal > 10) {
+imprimir ("se puede mamar un guebo de lo grande");
+}
+</script>
