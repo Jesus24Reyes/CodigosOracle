@@ -1,0 +1,34 @@
+<meta charset="UTF-8">
+<h1> Tabla de multiplicacion </h1>
+<script>
+    function saltarLinea() {
+        document.write("<br>");
+        document.write("<br>");
+    }
+
+    function imprimir(frase) {
+        document.write(frase);
+        saltarLinea();
+     
+    }
+
+var multiplo = 1
+imprimir("Tabla del 1 con WHILE");
+while(multiplo <=12) {
+imprimir(2 * multiplo);
+multiplo = multiplo + 1;
+}
+
+imprimir("Tabla del 7 con FOR");
+
+for(var multiplo = 1;multiplo <= 12;multiplo++){
+imprimir (7 * multiplo);
+}
+
+
+
+
+
+    
+
+</script>
