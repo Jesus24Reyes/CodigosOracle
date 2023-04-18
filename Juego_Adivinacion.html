@@ -13,13 +13,30 @@ saltarlinea();
 }
 
 var numeropensado = Math.round(Math.random()*10);
-var numerolanzado = parseInt(prompt(" Inserte un numero entre 0-10"))
+var intentos = 3;
+var contador = 1;
+
+
+while (contador <= intentos) {
+
+var numerolanzado = parseInt(prompt(" Inserte un numero entre 0-10"));
 
 if (numeropensado == numerolanzado) {
-imprimir("Usted es un salami induveca");
- 
-}else {
-    imprimir("El numero era " + numeropensado); 
+   
+ alert("Usted acerto en intento " + contador + " el numero pensado era"  + numeropensado);
+    break;
+
+
+}
+else {
+
+    alert("Usted la maco el numero era " + numeropensado); 
+}
+
+contador++;
+
+imprimir("Fin del juego");
+
 }
 
 </script>
