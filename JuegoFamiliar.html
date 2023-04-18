@@ -1,0 +1,32 @@
+<meta charset="UTF-8">
+<h1> Juego Familiar </h1>
+<script>
+    function saltarLinea() {
+        document.write("<br>");
+        document.write("<br>");
+    }
+
+    function imprimir(frase) {
+        document.write(frase);
+        saltarLinea();
+     
+    }
+
+var Familiares = parseInt(prompt("Inserte la cantidad de familiares"));
+var contador = 1;
+var totaledades = 0;
+
+while (contador <= Familiares) {
+
+edad = parseInt(prompt("Inserte la edad del familiar"));
+totaledades = totaledades + edad;
+contador++;
+}
+edadpromedio = totaledades/Familiares;
+
+imprimir("La edad promedio de la familia reyes es " + edadpromedio);
+imprimir("END");
+
+    
+
+</script>
