@@ -1,0 +1,51 @@
+<meta charset="UFT-8">
+<h2> Descubre el secreto que te ayudara en la vida</h2>
+<input/>
+<button> Verify </button>
+
+<script>
+var secreto = Math.round(Math.random()*10);
+var input = document.querySelector("input"); //Con esto atraemos el codigo HTML hacia JavaScript
+
+function imprimir(palabra){
+document.write(palabra);
+document.write("<br>");
+}
+function verificar () {
+if (parseInt(input.value) == secreto) {
+
+    alert("Te estan pegando cuerno");
+ imprimir("Esperamos que este secreto pueda servirte de ayuda para poder mejorar tu amor propio");   
+}
+
+else{
+
+alert("No pudo descubrir el secreto, WOW");
+}
+input.value = ""; // Esto es para que el input se refleje en blanco despues de una accion
+input.focus(); // Esto es para mantener el cursor dentro del input
+
+
+}
+
+var boton = document.querySelector("button");
+boton.onclick = verificar; //Cuando se utiliza la función onclick en un elemento,se le asigna una accion especifica que se activara cuando el usuario
+// haga click en ese elemento. De igual manera cuando hacemos click en el botton trae la fuction verificar.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
