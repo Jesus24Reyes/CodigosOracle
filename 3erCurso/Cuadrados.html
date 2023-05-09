@@ -1,0 +1,30 @@
+<canvas width="600" height="400"></canvas>
+
+<script>
+
+    var pantalla = document.querySelector("canvas");
+    var pincel = pantalla.getContext("2d");
+    pincel.fillStyle = "lightblue";
+    pincel.fillRect(0, 0, 600, 400);
+
+    function Circunferencia(x,y,radio,){
+    pincel.fillStyle = "red";
+    pincel.beginPath();
+    pincel.arc(x,y,radio,0,2*Math.PI); // funcionar para hacer un circulo
+    pincel.fill();
+}
+
+function cleanscreen(){
+pincel.clearRect(0,0,600,400);
+}
+var x = 1
+
+function actualizar(){
+cleanscreen();
+Circunferencia(x,10,10,);
+Circunferencia(x,10,10,);
+x++;
+}
+
+setInterval(actualizar,100);
+</script>

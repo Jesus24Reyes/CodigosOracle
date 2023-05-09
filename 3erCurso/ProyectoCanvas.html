@@ -1,0 +1,23 @@
+<canvas width="600" height="400"> </canvas>
+
+<script>
+
+function dibujarCuadrados(x,y,width,height,colors){
+
+
+var pantalla =  document.querySelector("canvas");
+var pincel = pantalla.getContext("2d");
+
+pincel.fillStyle = colors;
+pincel.fillRect(x,y,width,height)
+}
+
+dibujarCuadrados(300,0,400,250,"red"); // 300 de largo / 0 de altura / 400 tamaño de ancho a colorear / 250 de largo tamaño a colorear
+dibujarCuadrados(300,200,300,200,"blue");
+dibujarCuadrados(0,200,300,200,"red");
+dibujarCuadrados(0,0,300,200, "blue");
+dibujarCuadrados(250,0,100,400, "white");
+dibujarCuadrados(0,170,600,75,"white");
+
+
+</script>
